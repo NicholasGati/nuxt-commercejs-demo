@@ -117,6 +117,10 @@ export default {
   .cart {
     width: 100vw;
     right: -105vw;
+
+    &.opened {
+      right: 0;
+    }
   }
 }
 </style>
