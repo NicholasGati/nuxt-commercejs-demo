@@ -1,6 +1,8 @@
 <template>
   <tr>
-    <td class="image-cell"><img :src="item.media.source" /></td>
+    <td class="image-cell is-hidden-mobile">
+      <img :src="item.media.source" />
+    </td>
     <td>{{ item.name }}</td>
     <td>{{ item.price.formatted_with_symbol }}</td>
     <td class="quantity-cell">

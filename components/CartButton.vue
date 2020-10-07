@@ -16,7 +16,11 @@
       ></font-awesome-icon>
       <span class="border mx-2"></span>
       <transition name="fade">
-        <span>{{ cartCount }} Items</span>
+        <span
+          >{{ cartCount }} Item<span v-if="parseInt(cartCount) != 1"
+            >s</span
+          ></span
+        >
       </transition>
       <span class="border mx-2"></span>
       <transition name="fade">

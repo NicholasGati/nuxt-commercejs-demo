@@ -71,4 +71,10 @@ export default {
 .footer {
   padding: 4rem;
 }
+
+@include mobile {
+  .footer {
+    padding-bottom: 6rem;
+  }
+}
 </style>
