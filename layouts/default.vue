@@ -3,6 +3,7 @@
     <Nuxt />
     <Foot />
     <Cart />
+    <MobileCartMenu />
   </div>
 </template>
 

@@ -25,7 +25,7 @@
       </div>
 
       <div class="navbar-item">
-        <CartButton />
+        <CartButton :slanted="true" />
       </div>
     </div>
   </div>

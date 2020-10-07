@@ -10,7 +10,7 @@
   >
     <div class="columns is-multiline">
       <div class="column is-12 px-6 py-6 has-background-light">
-        <CartButton />
+        <CartButton :slanted="true" />
       </div>
 
       <div class="column is-12 px-6 py-6 has-text-weight-light">

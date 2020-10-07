@@ -4,7 +4,6 @@
     <td>{{ item.name }}</td>
     <td>{{ item.price.formatted_with_symbol }}</td>
     <td class="quantity-cell">
-      <span>+</span>
       <input
         v-model.number="quantity"
         type="number"

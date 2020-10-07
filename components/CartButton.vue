@@ -1,24 +1,12 @@
 <template>
-  <!-- <nuxt-link to="/cart">
-    <button class="columns button gati-button has-text-white slanted">
-      <span class="text">
-        <font-awesome-icon
-          :icon="['fas', 'shopping-cart']"
-          class="has-text-white"
-        ></font-awesome-icon>
-        <span class="border mx-2"></span>
-        <transition name="fade">
-          <span>{{ cartCount }} Items</span>
-        </transition>
-        <span class="border mx-2"></span>
-        <transition name="fade">
-          <span>{{ cartSubtotal }}</span>
-        </transition>
-      </span>
-    </button>
-  </nuxt-link> -->
   <button
-    class="columns button gati-button has-text-white slanted"
+    :class="{
+      columns: true,
+      button: true,
+      'gati-button': true,
+      'has-text-white': true,
+      slanted: slanted,
+    }"
     @click="setCartView"
   >
     <span class="text">
@@ -40,6 +28,9 @@
 
 <script>
 export default {
+  props: {
+    slanted: { type: Boolean, required: true, defaultValue: true },
+  },
   computed: {
     cartCount() {
       return this.$store.getters.getCartItemCount
