@@ -5,12 +5,12 @@
     </div>
 
     <!-- Hero Image and Title -->
-    <div class="hero-body py-4 px-6">
+    <div class="hero-body">
       <div class="columns is-vcentered has-text-centered-mobile">
         <!-- Landing page Title -->
         <div class="column is-5">
           <h1
-            class="title has-text-white is-1 is-3-mobile has-text-weight-semibold is-spaced main-title"
+            class="title has-text-white is-size-1 is-size-3-mobile has-text-weight-semibold is-spaced main-title"
           >
             Your one-stop shop for electronics
           </h1>
@@ -44,11 +44,21 @@ export default {}
 
 <style lang="scss" scoped>
 .hero {
-  // .image {
-  img {
-    width: 75%;
-    height: auto;
+  .hero-body {
+    padding: 3rem;
+
+    img {
+      width: 75%;
+      height: auto;
+    }
   }
-  // }
+}
+
+@include mobile {
+  .hero {
+    .hero-body {
+      padding: 5rem 3rem;
+    }
+  }
 }
 </style>
