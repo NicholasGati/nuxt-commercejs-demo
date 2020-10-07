@@ -1,6 +1,6 @@
 <template>
   <div class="mobile-cart-menu is-hidden-tablet">
-    <CartButton :slanted="false" class="menu" />
+    <CartButton :slanted="false" class="menu py-6 mx-0" />
   </div>
 </template>
 
