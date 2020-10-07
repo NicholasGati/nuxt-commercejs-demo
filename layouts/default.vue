@@ -28,6 +28,7 @@ export default {
 <style lang="scss">
 body {
   font-family: 'Cabin Condensed', sans-serif;
+  overflow-x: hidden;
 }
 
 hr {

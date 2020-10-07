@@ -6,11 +6,11 @@
 
     <!-- Hero Image and Title -->
     <div class="hero-body py-4 px-6">
-      <div class="columns is-vcentered">
+      <div class="columns is-vcentered has-text-centered-mobile">
         <!-- Landing page Title -->
         <div class="column is-5">
           <h1
-            class="title has-text-white is-1 has-text-weight-semibold is-spaced main-title"
+            class="title has-text-white is-1 is-3-mobile has-text-weight-semibold is-spaced main-title"
           >
             Your one-stop shop for electronics
           </h1>
